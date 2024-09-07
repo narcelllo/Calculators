@@ -17,3 +17,7 @@ def test_calulate():
     assert "data" in response
     assert "Calculator" in response["data"]
     assert "result" in response["data"]
+
+    # Assertiveness response
+    assert response["data"]["result"] == 15.7085625
+    assert response["data"]["Calculator"] == 2
