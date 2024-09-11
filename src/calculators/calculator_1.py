@@ -37,3 +37,4 @@ class Calculator1:
                 "Calculator": 1,
                 "result": calc_result
         }}
+   
