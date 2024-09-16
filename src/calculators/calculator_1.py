@@ -2,7 +2,7 @@ from flask import request as FlaskRequest
 from typing import Dict
 
 class Calculator1:
-    def calculate(self, request: FlaskRequest) -> Dict:
+    def calculate(self, request: FlaskRequest) -> Dict: # type: ignore
         body = request.json
         input_data = self.__validate_body(body)
         splites_number = input_data / 3
