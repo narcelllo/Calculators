@@ -13,11 +13,7 @@ class Calculator3:
         print (type(input_data))
 
         variance = self.__calculate_variance(input_data)
-        print(f"variance {variance}")
-        print(type(variance))
         multiplication = self.__calculate_mutiplication(input_data)
-        print(f"multiplication {multiplication}")
-        print(type(multiplication))
         self.__verify_result(variance, multiplication)
 
         formated_response = self.__format_response(variance)
@@ -48,7 +44,7 @@ class Calculator3:
         return {
             "data": {
                 "Calculator": 3,
-                "result": variance,
+                "value": variance,
                 "success": True
         }
     }

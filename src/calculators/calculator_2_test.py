@@ -2,9 +2,8 @@ from typing import Dict, List
 from pytest import raises
 from .calculator_2 import Calculator2
 from src.drivers.numpy_handler import NumpyHandler
-from src.drivers.interfaces.driver_handler_interface import DriverHandlerInterface
 
-class MockDriverHandler(DriverHandlerInterface):
+class MockDriverHandler():
     def standarf_derivation(self, numbers: List[float]) -> float:
         return 3
 
