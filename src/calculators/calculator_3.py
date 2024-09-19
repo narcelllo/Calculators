@@ -21,7 +21,7 @@ class Calculator3:
 
     def __validate_body(self, body: Dict) -> List[float]:
         if "numbers" not in body:
-            raise Exception('body does not contain numbers! - incorrect format! \n Examble format: {"numbers": 3.4, 4, 64.13}')
+            raise Exception('body does not contain numbers! - incorrect format! \n Examble format: {"numbers": [3.4, 4, 64.13]}')
         
         input_data = body["numbers"]
         return input_data
