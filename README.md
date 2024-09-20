@@ -1,2 +1,2 @@
-# calculator-one
-Design de código e arquitetura de software
+# Calculator
+Design de código e arquitetura de software considerando o melhor em bos práticas.
