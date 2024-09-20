@@ -6,13 +6,11 @@ from src.errors.http_bad_request import HttpBadRequestError
 
 class Calculator3:
     def __init__(self, driver_handler: DriverHandlerInterface) -> None:
-        self.__driver_hendler = driver_handler
+        self.__driver_handler = driver_handler
         
     def calculate(self, request: FlaskRequest) -> Dict: # type: ignore
         body = request.json
         input_data = self.__validate_body(body)
-        print(f"input {input_data}")
-        print (type(input_data))
 
         variance = self.__calculate_variance(input_data)
         multiplication = self.__calculate_mutiplication(input_data)
@@ -29,7 +27,7 @@ class Calculator3:
         return input_data
     
     def __calculate_variance(self, numbers: List[float]) -> float:
-         variance = self.__driver_hendler.variance(numbers)
+         variance = self.__driver_handler.variance(numbers)
          return variance
     
     def __calculate_mutiplication(self, numbers: List[float]) -> float:
